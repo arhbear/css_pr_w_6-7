@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Пример созданиянаклонной ленточки с текстом</title>
+    </head>
+    <style>
+        .ribbon{
+            color:#9ac42c; position: relative; display:inline-block; overflow: hidden; padding: 5px; font-weight: 900; font-family: Arial, 'Sans-serif';
+        }
+        .ribbon p{
+            display: inline;
+        }
+        .ribbon p span{
+            -moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);-o-transform: rotate(45deg);
+            display: inline-block;text-align:center;width:100px;text-transform:uppercase; padding:3px 10px;background: #d93131;position: absolute; top: 22px; right: -25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2),inset 0 5px 30px rgba(255, 255, 255, 0.3);
+        }
+        .ribbon p:before{
+            content:""; width: 0; position: absolute; height: 0; top: -17px; border-color: transparent transparent #eeeeee transparent; z-index: -1; right: 69px; border: 17px solid;
+        }
+        .ribbon p:after{
+            content:""; width: 0; position: absolute; height:0; top: 74px; border: 17px solid; z-index: -1; border-color: #eeeeee transparent transparent transparent; right:-10px;
+        }
+
+    </style>
+    <body>
+        <div class="ribbon">
+            <img src="images/strawberry.jpg">
+            <p><span>клубника</span></p>
+        </div>
+        <div class="ribbon">
+            <img src="images/cherry.jpg">
+            <p><span>вишня</span></p>
+        </div>
+        <div class="ribbon">
+            <img src="images/malina.jpg">
+            <p><span>малина</span></p>
+        </div>
+        <div class="ribbon">
+            <img src="images/smorodina.jpg">
+            <p><span>смородина</span></p>
+        </div>
+    </body>
+</html>

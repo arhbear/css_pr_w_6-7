@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Фотогалерея CSS3</title>
+        <style media="screen">
+            .hovergallery img{
+                -webkit-transform: scale(0.8); -moz-transform: scale(0.8); -o-transform: scale(0.8);transform: scale(0.8);
+                -webkit-transition-duration: 0.5; -moz-transition-duration: 0.5; -o-transition-duration: 0.5;transition-duration: 0.5;
+                opacity:0.5;margin: 15px; float: left;
+            }
+            .hovergallery img:hover{
+                -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2);transform: scale(1.2);
+                box-shadow:0 0 30px gray; -webkit-box-shadow:0 0 30px gray; -moz-box-shadow:0 0 30px gray;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hovergallery" align="center">
+            <a href="#"><img src="images/minsk_1.jpg"></a>
+            <a href="#"><img src="images/minsk_2.jpg"></a>
+            <a href="#"><img src="images/minsk_3.jpg"></a>
+            <a href="#"><img src="images/minsk_4.jpg"></a>
+        </div>
+    </body>
+</html>
